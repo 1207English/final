@@ -553,10 +553,10 @@ Changes to be committed:
 <p></p>
 <p>最终提交的信息应该与所提交信息中包含的内容相关——也许是一个新特性，也许是一个问题修复，也许只是一个打字错误。不要放像“asdfadsf”或“foobar”这样的信息。这让其他看到你所提交信息的人很难过。非常非常难过。</p>
 <p>&nbsp;</p>
-<h3><a id="user-content-step-3-creating-a-new-branch" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-3-creating-a-new-branch" aria-hidden="true"></a>Step 5: Create a new branch</h3>
-<p>Now that you've made a new commit, let's try something a&nbsp;little more advanced.</p>
-<p>Say you want to make a new feature but are worried about making&nbsp;changes to the main project while developing the feature. This is where <strong><a href="https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is" target="_blank">git branches</a>&nbsp;</strong>come in.&nbsp;</p>
-<p>Branches allow you to move back and forth between 'states' of a project. For instance, if you want to add a new page to your website you can create a new branch just for that page&nbsp;without affecting the&nbsp;main part of the project. Once you're done with the page, you can&nbsp;<a href="http://git-scm.com/docs/git-merge" target="_blank"><strong>merge</strong></a> your changes from your branch into the master branch. When you create a new branch,&nbsp;<span>Git keeps&nbsp;</span><span>track of which commit your branch 'branched' off of, so it knows the history behind all the files.&nbsp;</span></p>
+<h3><a id="user-content-step-3-creating-a-new-branch" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-3-creating-a-new-branch" aria-hidden="true"></a>步骤 5：新建分支</h3>
+<p>现在，您已经进行了一次新的提交，让我们尝试一些更高级的东西。</p>
+<p>假设您要制作一个新功能，但担心在开发功能时会对主项目进行更改。 这是 <strong><a href="https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is" target="_blank">git 分支&nbsp;</strong>进入的地方.&nbsp;</p>
+<p>分支允许您在项目的“状态”之间来回移动。例如，如果要向网站添加新页面，则可以仅为该页面创建一个新分支，而不会影响项目的主要部分。 完成页面后，您可以&nbsp;合并从分支到主分支的更改。创建新分支时，&nbsp;<span>Git 会&nbsp;</span><span>跟踪您的分支“分支”的提交，因此它知道所有文件的历史记录。&nbsp;</span></p>
 <p>Let's say you are on the master branch and want to create a new branch to develop your web page. Here's what you'll do: Run<strong> <a href="http://git-scm.com/docs/git-checkout" target="_blank"><code>git checkout -b &lt;my branch name&gt;</code></a></strong>. This command will automatically create a new branch and then 'check you out' on it, meaning git will move you to that branch, off of the master branch.</p>
 <p>After running the above command,&nbsp;you can use the <strong><a href="http://git-scm.com/docs/git-branch" target="_blank"><code>git branch</code></a></strong> command to confirm that your branch was created:</p>
 <p>
