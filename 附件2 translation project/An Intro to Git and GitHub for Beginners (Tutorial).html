@@ -712,9 +712,9 @@ To https://github.com/cubeton/mynewrepository.git
 <p><img src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/Git_101_Screenshot_8.webp" alt="Git_101_Screenshot_8.png" title="Git_101_Screenshot_8.png" data-constrained="true" style="width: 877px;" width="869" height="370" srcset="https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_8.png?width=435&amp;height=185&amp;name=Git_101_Screenshot_8.png 435w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_8.png?width=869&amp;height=370&amp;name=Git_101_Screenshot_8.png 869w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_8.png?width=1304&amp;height=555&amp;name=Git_101_Screenshot_8.png 1304w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_8.png?width=1738&amp;height=740&amp;name=Git_101_Screenshot_8.png 1738w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_8.png?width=2173&amp;height=925&amp;name=Git_101_Screenshot_8.png 2173w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_8.png?width=2607&amp;height=1110&amp;name=Git_101_Screenshot_8.png 2607w" sizes="(max-width: 869px) 100vw, 869px"></p>
 <p>您还可以在右侧看到提交。<a href="https://git-scm.com/docs/git-hash-object" target="_blank"><strong>散列码</strong></a>&nbsp;散列码是&nbsp;散列码是该特定提交的唯一标识符。&nbsp; 这对于引用特定的提交以及撤消更改很有用。(使用 <code><strong><a href="http://git-scm.com/docs/git-revert" target="_blank">git还原</a></strong>&nbsp;&lt;散列码&gt;</code>&nbsp;命令回溯).</p>
 <p>&nbsp;</p>
-<h3><a id="user-content-step-9-almost-done-time-to-get-your-changes-on-github-back-to-your-computer" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-9-almost-done-time-to-get-your-changes-on-github-back-to-your-computer" aria-hidden="true"></a>Step 10: Get changes on GitHub back to your computer</h3>
-<p>Right now, the repo on GitHub looks a little different than what you have on your local machine. For example, the commit you made in your branch and merged into the master branch doesn't exist in the master branch on your local machine.</p>
-<p>In order to get the most recent changes that you or others have merged on GitHub, use the <code><strong>git pull origin master&nbsp;</strong></code>command (when working on the master branch).</p>
+<h3><a id="user-content-step-9-almost-done-time-to-get-your-changes-on-github-back-to-your-computer" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-9-almost-done-time-to-get-your-changes-on-github-back-to-your-computer" aria-hidden="true"></a>步骤 10: 将GitHub上的更改反馈到您的计算机 </h3>
+<p>现在，GitHub上的仓库看起来与本地计算机上的仓库有所不同。 例如，您在分支中进行的提交并合并到master分支中的提交在本地计算机上的master分支中并不存在。</p>
+<p>为了获得您或其他人在GitHub上合并的最新更改，可以使用  <code><strong>git pull origin master&nbsp;</strong></code>主命令(在主分支上工作时)。 </p>
 <p>
 <script src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/48b5c726b496d50c3975.js.下载"></script><link rel="stylesheet" href="./An Intro to Git and GitHub for Beginners (Tutorial)_files/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css"></p><div id="gist26279024" class="gist">
     <div class="gist-file">
@@ -749,9 +749,9 @@ Merge made by the <span class="pl-s"><span class="pl-pds">'</span>recursive<span
 </div>
 
 <p></p>
-<p>This shows you all the files that have changed and how they've changed.</p>
-<p>Now we can use the <a href="http://git-scm.com/docs/git-log" target="_blank"><strong><code>git log</code></strong></a> command again to&nbsp;see all new commits.</p>
-<p>(You may need to switch branches back to the master branch. You can do that using the <code><strong>git checkout master</strong>&nbsp;</code>command.)</p>
+<p>这将显示所有已更改的文件以及它们是如何更改的。 </p>
+<p>现在我们可以用  <a href="http://git-scm.com/docs/git-log" target="_blank"><strong><code>git log</code></strong></a> 再次命令以查看所有新提交。 </p>
+<p>(您可能需要将分支切换回主分支。您可以使用  <code><strong>git checkout master</strong>&nbsp;</code>主命令来实现这一点。) </p>
 <p>
 <script src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/48f55c5a237cd8e1a238.js.下载"></script><link rel="stylesheet" href="./An Intro to Git and GitHub for Beginners (Tutorial)_files/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css"></p><div id="gist26346090" class="gist">
     <div class="gist-file">
@@ -810,10 +810,10 @@ Date:   Thu Sep 10 17:42:15 2015 -0400
 </div>
 
 <p></p>
-<h3>步骤11: Bask in your git glory</h3>
-<p><span>You've successfully made a PR&nbsp;and merged your code to the master branch. Congratulations! If you'd like to dive a little deeper, check out the files in </span><a href="https://github.com/cubeton/git101/tree/master/TurtorialInfo" target="_blank">this Git101 folder</a><span>&nbsp;for even&nbsp;more tips and tricks on using git and GitHub.&nbsp;</span></p>
-<p>I also recommend finding some time to work with your team on simulating a smaller group project like we did here. Have your team make a new folder with your team name, and add some files with text to it. Then, try pushing those changes to this remote repo. That way, your team can start making changes to files they didn't originally create and practice using the PR&nbsp;feature. And, use the git blame and&nbsp;git history tools on GitHub to get familiar with tracking which changes have been made in a file and who made those changes.&nbsp;</p>
-<p><span>The more you use git, the more comfortable you'll... git with it. (I couldn't resist.)</span></p>
+<h3>步骤11: 享受你的git glory</h3>
+<p><span>您已经成功地创建了PR并将代码合并到主分支。恭喜你!如果您想更深入地研究一下，请查看  </span><a href="https://github.com/cubeton/git101/tree/master/TurtorialInfo" target="_blank">this Git101 folder</a><span>&nbsp;文件夹中的文件，了解更多关于使用git和GitHub的技巧。 &nbsp;</span></p>
+<p>我还建议花一些时间与您的团队一起模拟一个较小的小组项目，就像我们在这里所做的那样。 让您的团队使用您的团队名称创建一个新文件夹，并向其中添加一些带有文本的文件。 然后，尝试将这些更改推送到此远程仓库中。 这样，您的团队就可以开始对最初没有创建的文件进行更改，并使用PR功能进行练习。 并且，使用GitHub上的git blame和git history工具熟悉跟踪文件中进行了哪些更改以及谁进行了这些更改。&nbsp;</p>
+<p><span>您使用git的次数越多，您将越感到舒适。 （反正我是无法抗拒。）</span></p>
 
                 </div>
             </div>
