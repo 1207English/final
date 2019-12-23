@@ -557,8 +557,8 @@ Changes to be committed:
 <p>现在，您已经进行了一次新的提交，让我们尝试一些更高级的东西。</p>
 <p>假设您要制作一个新功能，但担心在开发功能时会对主项目进行更改。 这是 <strong><a href="https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is" target="_blank">git 分支&nbsp;</strong>进入的地方.&nbsp;</p>
 <p>分支允许您在项目的“状态”之间来回移动。例如，如果要向网站添加新页面，则可以仅为该页面创建一个新分支，而不会影响项目的主要部分。 完成页面后，您可以&nbsp;合并从分支到主分支的更改。创建新分支时，&nbsp;<span>Git 会&nbsp;</span><span>跟踪您的分支“分支”的提交，因此它知道所有文件的历史记录。&nbsp;</span></p>
-<p>Let's say you are on the master branch and want to create a new branch to develop your web page. Here's what you'll do: Run<strong> <a href="http://git-scm.com/docs/git-checkout" target="_blank"><code>git checkout -b &lt;my branch name&gt;</code></a></strong>. This command will automatically create a new branch and then 'check you out' on it, meaning git will move you to that branch, off of the master branch.</p>
-<p>After running the above command,&nbsp;you can use the <strong><a href="http://git-scm.com/docs/git-branch" target="_blank"><code>git branch</code></a></strong> command to confirm that your branch was created:</p>
+<p>假设您在master分支上，并且想要创建一个新分支来开发您的网页。您将执行以下操作：运行<strong> <a href="http://git-scm.com/docs/git-checkout" target="_blank"><code>git checkout -b &lt;my branch name&gt;</code></a></strong>. 这个命令将自动创建一个新的分支，然后在它上面“检查”，这意味着git将把你从主分支移到那个分支。</p>
+<p>运行上述命令后，您可以使用 <strong><a href="http://git-scm.com/docs/git-branch" target="_blank"><code>git branch</code></a></strong>命令来确认您的分支已创建: </p>
 <p>
 <script src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/fa25a25f322a2cd5f405.js.下载"></script><link rel="stylesheet" href="./An Intro to Git and GitHub for Beginners (Tutorial)_files/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css"></p><div id="gist26277733" class="gist">
     <div class="gist-file">
@@ -586,8 +586,8 @@ Changes to be committed:
 </div>
 
 <p></p>
-<p>The branch name with the asterisk next to it indicates which branch you're pointed to at that given time.&nbsp;</p>
-<p>Now, if you switch back to the master branch and make some more commits, your new branch won't see any of those changes until you <a href="http://git-scm.com/docs/git-merge" target="_blank"><strong>merge</strong></a> those changes onto your new branch.</p>
+<p>分支名称旁边带有星号表示在给定时间指向的分支。&nbsp;</p>
+<p>现在，如果您切换回master分支并进行更多提交，则新的分支将不会出现任何更改，除非您将这些更改<strong>合并</ strong>到新分支上。</p>
 <p>&nbsp;</p>
 <h3>Step 6:&nbsp;Create a new repository on GitHub</h3>
 <p>If you only&nbsp;want to keep track of your code locally, you don't&nbsp;need to use GitHub. But&nbsp;if you want to work with a team, you can use&nbsp;GitHub to collaboratively modify the project's&nbsp;code.</p>
