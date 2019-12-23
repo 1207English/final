@@ -341,12 +341,12 @@ body {padding-left:0px!important;padding-right:0px!important;}
                     <span id="hs_cos_wrapper_post_body" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="rich_text"><p><span><img src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/Git_101-1.webp" title="git_github_tutorial" style="width: 310px; float: right; margin: 0px 0px 5px 8px;" alt="git_github_tutorial" data-constrained="true" width="310" height="258" srcset="https://product.hubspot.com/hs-fs/hubfs/Git_101-1.jpg?width=155&amp;height=129&amp;name=Git_101-1.jpg 155w, https://product.hubspot.com/hs-fs/hubfs/Git_101-1.jpg?width=310&amp;height=258&amp;name=Git_101-1.jpg 310w, https://product.hubspot.com/hs-fs/hubfs/Git_101-1.jpg?width=465&amp;height=387&amp;name=Git_101-1.jpg 465w, https://product.hubspot.com/hs-fs/hubfs/Git_101-1.jpg?width=620&amp;height=516&amp;name=Git_101-1.jpg 620w, https://product.hubspot.com/hs-fs/hubfs/Git_101-1.jpg?width=775&amp;height=645&amp;name=Git_101-1.jpg 775w, https://product.hubspot.com/hs-fs/hubfs/Git_101-1.jpg?width=930&amp;height=774&amp;name=Git_101-1.jpg 930w" sizes="(max-width: 310px) 100vw, 310px">In August, we hosted a <a href="http://www.meetup.com/Women-Who-Code-Boston/events/224072838/" target="_blank">Women Who Code meetup</a>&nbsp;</span><span>at HubSpot and led a workshop for beginners on using&nbsp;git and GitHub. I first walked through a&nbsp;</span><a href="https://www.slideshare.net/HubSpot/git-101-git-and-github-for-beginners" target="_blank">slide presentation</a><span> on the basics and background of git and then we broke out into groups to run through a tutorial I created to simulate working&nbsp;on a large, collaborative project. We got feedback after the event that it was a helpful, hands-on introduction. So&nbsp;if you're new to git, too, follow the steps below to get comfortable making changes to the code base, opening up a pull request (PR), and merging code into the&nbsp;master branch. A</span>ny important git and GitHub terms are in bold&nbsp;with links to the official git reference materials.&nbsp;</p>
 <p>&nbsp;</p>
 <p><!--more--></p>
-<h3>Step 0:&nbsp;Install git and create a GitHub account&nbsp;</h3>
+<h3>步骤0：安装git,创建一个github账户。&nbsp;</h3>
 <p>The first two things you'll want to do are install git and create a free GitHub account.</p>
 <p>Follow the instructions <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">here</a>&nbsp;to install&nbsp;git (if it's not already installed).&nbsp;Note that for this&nbsp;tutorial we will be using git on the command line only. While there are some great git GUIs (graphical user interfaces), I think it's easier to learn git using git-specific commands first and then to try out a git GUI once you're more comfortable with the command.&nbsp;</p>
 <p>Once you've done that, create a GitHub account&nbsp;<a href="https://github.com/join" target="_blank">here</a>. &nbsp;(Accounts are free for public repositories, but there's a charge for private repositories.)</p>
 <p>&nbsp;</p>
-<h3>Step 1: Create a&nbsp;local git repository&nbsp;</h3>
+<h3>步骤一: Create a&nbsp;local git repository&nbsp;</h3>
 <p>When creating a new project on your local machine using git, you'll first create a new&nbsp;<strong><a href="https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository" target="_blank">repository</a>&nbsp;</strong>(or often, '<strong>repo</strong>', for short).&nbsp;</p>
 <p>To use git we'll be using the terminal. If you don't have much experience with the terminal and basic commands, check out <a href="http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/" target="_blank">this tutorial</a>&nbsp;(especially the 'Navigating the Filesystem' and 'Moving Around' sections).</p>
 <p>To begin, open up a terminal and move to where you want to place the project on your local machine using the <code>cd</code> (change directory) command. For example,&nbsp;if you have a 'projects' folder on your desktop, you'd do something like:</p>
@@ -520,9 +520,9 @@ Changes to be committed:
 </span><p></p>
 <p>&nbsp;To reiterate, the file has&nbsp;<strong>not&nbsp;</strong>yet been added to a commit, but it's about to be.</p>
 <p>&nbsp;</p>
-<h3>Step 4: Create a commit</h3>
-<p>It's time to create your first commit!</p>
-<p>Run the command <code>git commit -m "Your message about the commit"</code></p>
+<h3>步骤 4：创建提交 </h3>
+<p>创建您的第一次提交</p>
+<p>运行命令 <code>git commit -m "关于您提交的消息"</code></p>
 <p>
 <script src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/1068d965d147b4039e4d.js.下载"></script><link rel="stylesheet" href="./An Intro to Git and GitHub for Beginners (Tutorial)_files/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css"></p><div id="gist26246431" class="gist">
     <div class="gist-file">
@@ -551,14 +551,14 @@ Changes to be committed:
 </div>
 
 <p></p>
-<p>The message at the end of the commit should be something related to what the commit contains - maybe it's a new feature, maybe it's a bug fix, maybe it's just fixing a typo. Don't put a message like&nbsp;"asdfadsf" or "foobar". That makes the other people who see your commit sad. Very, very, sad.</p>
+<p>最终提交的信息应该与所提交信息中包含的内容相关——也许是一个新特性，也许是一个问题修复，也许只是一个打字错误。不要放像“asdfadsf”或“foobar”这样的信息。这让其他看到你所提交信息的人很难过。非常非常难过。</p>
 <p>&nbsp;</p>
-<h3><a id="user-content-step-3-creating-a-new-branch" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-3-creating-a-new-branch" aria-hidden="true"></a>Step 5: Create a new branch</h3>
-<p>Now that you've made a new commit, let's try something a&nbsp;little more advanced.</p>
-<p>Say you want to make a new feature but are worried about making&nbsp;changes to the main project while developing the feature. This is where <strong><a href="https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is" target="_blank">git branches</a>&nbsp;</strong>come in.&nbsp;</p>
-<p>Branches allow you to move back and forth between 'states' of a project. For instance, if you want to add a new page to your website you can create a new branch just for that page&nbsp;without affecting the&nbsp;main part of the project. Once you're done with the page, you can&nbsp;<a href="http://git-scm.com/docs/git-merge" target="_blank"><strong>merge</strong></a> your changes from your branch into the master branch. When you create a new branch,&nbsp;<span>Git keeps&nbsp;</span><span>track of which commit your branch 'branched' off of, so it knows the history behind all the files.&nbsp;</span></p>
-<p>Let's say you are on the master branch and want to create a new branch to develop your web page. Here's what you'll do: Run<strong> <a href="http://git-scm.com/docs/git-checkout" target="_blank"><code>git checkout -b &lt;my branch name&gt;</code></a></strong>. This command will automatically create a new branch and then 'check you out' on it, meaning git will move you to that branch, off of the master branch.</p>
-<p>After running the above command,&nbsp;you can use the <strong><a href="http://git-scm.com/docs/git-branch" target="_blank"><code>git branch</code></a></strong> command to confirm that your branch was created:</p>
+<h3><a id="user-content-step-3-creating-a-new-branch" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-3-creating-a-new-branch" aria-hidden="true"></a>步骤 5：新建分支</h3>
+<p>现在，您已经进行了一次新的提交，让我们尝试一些更高级的东西。</p>
+<p>假设您要制作一个新功能，但担心在开发功能时会对主项目进行更改。 这是 <strong><a href="https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is" target="_blank">git 分支&nbsp;</strong>进入的地方.&nbsp;</p>
+<p>分支允许您在项目的“状态”之间来回移动。例如，如果要向网站添加新页面，则可以仅为该页面创建一个新分支，而不会影响项目的主要部分。完成页面后，您可以&nbsp;合并从分支到主分支的更改。创建新分支时，&nbsp;<span>Git 会&nbsp;</span><span>跟踪您的分支“分支”的提交，因此它知道所有文件的历史记录。&nbsp;</span></p>
+<p>假设您在master分支上，并且想要创建一个新分支来开发您的网页。您将执行以下操作：运行<strong> <a href="http://git-scm.com/docs/git-checkout" target="_blank"><code>git checkout -b &lt;my branch name&gt;</code></a></strong>. 这个命令将自动创建一个新的分支，然后在它上面“检查”，这意味着git将把你从主分支移到那个分支。</p>
+<p>运行上述命令后，您可以使用 <strong><a href="http://git-scm.com/docs/git-branch" target="_blank"><code>git branch</code></a></strong>命令来确认您的分支已创建: </p>
 <p>
 <script src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/fa25a25f322a2cd5f405.js.下载"></script><link rel="stylesheet" href="./An Intro to Git and GitHub for Beginners (Tutorial)_files/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css"></p><div id="gist26277733" class="gist">
     <div class="gist-file">
@@ -586,8 +586,8 @@ Changes to be committed:
 </div>
 
 <p></p>
-<p>The branch name with the asterisk next to it indicates which branch you're pointed to at that given time.&nbsp;</p>
-<p>Now, if you switch back to the master branch and make some more commits, your new branch won't see any of those changes until you <a href="http://git-scm.com/docs/git-merge" target="_blank"><strong>merge</strong></a> those changes onto your new branch.</p>
+<p>分支名称旁边带有星号则表示在给定时间指向的分支。&nbsp;</p>
+<p>现在，如果您切换回主分支并进行更多提交，则新的分支将不会出现任何更改，除非您将这些更改<strong>合并</ strong>到新的分支上。</p>
 <p>&nbsp;</p>
 <h3>Step 6:&nbsp;Create a new repository on GitHub</h3>
 <p>If you only&nbsp;want to keep track of your code locally, you don't&nbsp;need to use GitHub. But&nbsp;if you want to work with a team, you can use&nbsp;GitHub to collaboratively modify the project's&nbsp;code.</p>
@@ -688,33 +688,33 @@ To https://github.com/cubeton/mynewrepository.git
 <p><a href="https://cloud.githubusercontent.com/assets/5241432/9189475/da30eb86-3fb6-11e5-934f-ca596a2cac69.png" target="_blank"><img alt="Git_101_Screenshot2.png" src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/Git_101_Screenshot2.webp" title="Git_101_Screenshot2.png" data-constrained="true" style="width: 1600px; display: block; margin-left: auto; margin-right: auto;" width="869" height="183" srcset="https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot2.png?width=435&amp;height=92&amp;name=Git_101_Screenshot2.png 435w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot2.png?width=869&amp;height=183&amp;name=Git_101_Screenshot2.png 869w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot2.png?width=1304&amp;height=275&amp;name=Git_101_Screenshot2.png 1304w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot2.png?width=1738&amp;height=366&amp;name=Git_101_Screenshot2.png 1738w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot2.png?width=2173&amp;height=458&amp;name=Git_101_Screenshot2.png 2173w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot2.png?width=2607&amp;height=549&amp;name=Git_101_Screenshot2.png 2607w" sizes="(max-width: 869px) 100vw, 869px"></a></p>
 <p>Now click the green button in the screenshot above. We're going to make a <strong>pull request</strong>!</p>
 <p>&nbsp;</p>
-<h3><a id="user-content-step-7-creating-a-pull-request-pr" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-7-creating-a-pull-request-pr" aria-hidden="true"></a>Step 8: Create a Pull Request (PR)</h3>
-<p>A pull request (or PR) is a way to alert a repo's owners that you want to make some changes to their code. It allows them to review the code and make sure it looks good before putting your changes on the master branch.</p>
-<p>This is what the PR page looks like before you've submitted it:</p>
+<h3><a id="user-content-step-7-creating-a-pull-request-pr" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-7-creating-a-pull-request-pr" aria-hidden="true"></a>步骤8：创建PR</h3>
+<p>PR是一种提醒存储库所有者要更改其代码的方式。 它允许他们检查代码，并确保代码看起来不错，然后再将更改放入master分支。</p>
+<p>这是提交PR页面之前的样子:</p>
 <p><a href="https://cloud.githubusercontent.com/assets/5241432/9189500/4688c07e-3fb7-11e5-99ed-d75b50ed9e48.png" target="_blank"><img alt="Git_101_Screenshot_4.png" src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/Git_101_Screenshot_4.webp" title="Git_101_Screenshot_4.png" data-constrained="true" style="width: 869px;" width="869" height="548" srcset="https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_4.png?width=435&amp;height=274&amp;name=Git_101_Screenshot_4.png 435w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_4.png?width=869&amp;height=548&amp;name=Git_101_Screenshot_4.png 869w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_4.png?width=1304&amp;height=822&amp;name=Git_101_Screenshot_4.png 1304w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_4.png?width=1738&amp;height=1096&amp;name=Git_101_Screenshot_4.png 1738w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_4.png?width=2173&amp;height=1370&amp;name=Git_101_Screenshot_4.png 2173w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_4.png?width=2607&amp;height=1644&amp;name=Git_101_Screenshot_4.png 2607w" sizes="(max-width: 869px) 100vw, 869px"></a></p>
 <p>&nbsp;</p>
-<p>And this is what it looks like once you've submitted the PR request:</p>
+<p>这是您提交PR请求后的样子：</p>
 <p><a href="https://cloud.githubusercontent.com/assets/5241432/9189528/b39a7176-3fb7-11e5-87b1-7fed3e63b6bb.png" target="_blank"><img alt="Git_101_Screenshot_5.png" src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/Git_101_Screenshot_5.webp" title="Git_101_Screenshot_5.png" data-constrained="true" style="width: 869px;" width="869" height="557" srcset="https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_5.png?width=435&amp;height=279&amp;name=Git_101_Screenshot_5.png 435w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_5.png?width=869&amp;height=557&amp;name=Git_101_Screenshot_5.png 869w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_5.png?width=1304&amp;height=836&amp;name=Git_101_Screenshot_5.png 1304w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_5.png?width=1738&amp;height=1114&amp;name=Git_101_Screenshot_5.png 1738w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_5.png?width=2173&amp;height=1393&amp;name=Git_101_Screenshot_5.png 2173w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_5.png?width=2607&amp;height=1671&amp;name=Git_101_Screenshot_5.png 2607w" sizes="(max-width: 869px) 100vw, 869px"></a></p>
 <p>&nbsp;</p>
-<p>You might see a big green button at the bottom that says 'Merge pull request'. Clicking&nbsp;this means you'll merge your changes into the master branch.</p>
-<p>Note that this button won't always be green. In some cases it'll be grey, which means you're faced with a <strong>merge conflict</strong>. This is when there is a change in one file that conflicts with a change in another file and git can't figure out which version to use. You'll have to manually go in&nbsp;and tell git which version to use.</p>
-<p>Sometimes you'll be a co-owner or the sole owner of a repo, in which case you may not need to create a PR to merge your changes. However, it's still a good idea to make one so you can keep a more complete history of your updates&nbsp;and to make sure you always create a new branch when making changes.</p>
+<p>您可能会在底部看到一个绿色的大按钮，上面显示“合并拉取请求”。 单击&nbsp;这意味着您将把更改合并到master分支中。</p>
+<p>请注意，此按钮并非总是绿色。 在某些情况下，它将是灰色的，这意味着您面临<strong>合并冲突。  </strong>. 这是当一个文件中的更改与另一个文件中的更改冲突并且git无法确定要使用哪个版本时。 您必须手动输入&nbsp;并告诉git使用哪个版本。</p>
+<p>有时，您将成为回购的共同所有者或唯一所有者，在这种情况下，您可能无需创建PR来合并您的更改。 但是，创建一个分支仍然是一个好主意，这样您可以保留更完整的更新历史记录，&nbsp;并确保在进行更改时始终创建一个新分支。</p>
 <p>&nbsp;</p>
-<h3><a id="user-content-step-8-merging-a-pr" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-8-merging-a-pr" aria-hidden="true"></a>Step 9: Merge a PR</h3>
-<p>Go ahead and click the green 'Merge pull request' button. This will merge your changes into the master branch.</p>
+<h3><a id="user-content-step-8-merging-a-pr" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-8-merging-a-pr" aria-hidden="true"></a>第9步：合并PR</h3>
+<p>继续并单击绿色的“合并拉取请求”按钮。 这会将您的更改合并到master分支中。</p>
 <p><a href="https://cloud.githubusercontent.com/assets/5241432/9189587/76631d98-3fb8-11e5-9fdb-17e7dec1c2a4.png" target="_blank"><img alt="Git_101_Screenshot_6.png" src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/Git_101_Screenshot_6.webp" title="Git_101_Screenshot_6.png" data-constrained="true" style="width: 869px;" width="869" height="519" srcset="https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_6.png?width=435&amp;height=260&amp;name=Git_101_Screenshot_6.png 435w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_6.png?width=869&amp;height=519&amp;name=Git_101_Screenshot_6.png 869w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_6.png?width=1304&amp;height=779&amp;name=Git_101_Screenshot_6.png 1304w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_6.png?width=1738&amp;height=1038&amp;name=Git_101_Screenshot_6.png 1738w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_6.png?width=2173&amp;height=1298&amp;name=Git_101_Screenshot_6.png 2173w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_6.png?width=2607&amp;height=1557&amp;name=Git_101_Screenshot_6.png 2607w" sizes="(max-width: 869px) 100vw, 869px"></a></p>
 <p>&nbsp;</p>
-<p>When you're done, I recommend deleting your branch (too many branches can become messy), so hit that grey 'Delete branch' button as well.</p>
-<p>You can double check that your commits were merged by clicking on the 'Commits' link on the first page of your new repo.</p>
+<p>完成后，建议您删除分支（太多分支会变得凌乱），因此也请点击灰色的“删除分支”按钮。</p>
+<p>您可以通过单击新存储库首页上的“提交”链接来仔细检查提交是否已合并。</p>
 <p><img src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/Git_101_Screenshot_7.webp" alt="Git_101_Screenshot_7.png" title="Git_101_Screenshot_7.png" data-constrained="true" style="width: 1600px;" width="869" height="222" srcset="https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_7.png?width=435&amp;height=111&amp;name=Git_101_Screenshot_7.png 435w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_7.png?width=869&amp;height=222&amp;name=Git_101_Screenshot_7.png 869w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_7.png?width=1304&amp;height=333&amp;name=Git_101_Screenshot_7.png 1304w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_7.png?width=1738&amp;height=444&amp;name=Git_101_Screenshot_7.png 1738w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_7.png?width=2173&amp;height=555&amp;name=Git_101_Screenshot_7.png 2173w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_7.png?width=2607&amp;height=666&amp;name=Git_101_Screenshot_7.png 2607w" sizes="(max-width: 869px) 100vw, 869px"></p>
 <p>&nbsp;</p>
-<p>This will show you&nbsp;a list of all the commits in that branch. You can see the one I just merged right up top (Merge pull request #2).</p>
+<p>这将显示&nbsp;该分支中所有提交的列表。 您可以看到我刚刚合并的那一个(合并PR #2).</p>
 <p><img src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/Git_101_Screenshot_8.webp" alt="Git_101_Screenshot_8.png" title="Git_101_Screenshot_8.png" data-constrained="true" style="width: 877px;" width="869" height="370" srcset="https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_8.png?width=435&amp;height=185&amp;name=Git_101_Screenshot_8.png 435w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_8.png?width=869&amp;height=370&amp;name=Git_101_Screenshot_8.png 869w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_8.png?width=1304&amp;height=555&amp;name=Git_101_Screenshot_8.png 1304w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_8.png?width=1738&amp;height=740&amp;name=Git_101_Screenshot_8.png 1738w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_8.png?width=2173&amp;height=925&amp;name=Git_101_Screenshot_8.png 2173w, https://product.hubspot.com/hs-fs/hubfs/Git_101_Screenshot_8.png?width=2607&amp;height=1110&amp;name=Git_101_Screenshot_8.png 2607w" sizes="(max-width: 869px) 100vw, 869px"></p>
-<p>You can also see the <a href="https://git-scm.com/docs/git-hash-object" target="_blank"><strong>hash code</strong></a>&nbsp;of the commit on the right hand side. A hash code is&nbsp;a unique identifier for that specific commit. It's useful for&nbsp;referring to specific commits and when undoing changes (use the <code><strong><a href="http://git-scm.com/docs/git-revert" target="_blank">git revert</a></strong>&nbsp;&lt;hash code number&gt;</code>&nbsp;command to backtrack).</p>
+<p>您还可以在右侧看到提交。<a href="https://git-scm.com/docs/git-hash-object" target="_blank"><strong>散列码</strong></a>&nbsp;散列码是&nbsp;散列码是该特定提交的唯一标识符。&nbsp; 这对于引用特定的提交以及撤消更改很有用。(使用 <code><strong><a href="http://git-scm.com/docs/git-revert" target="_blank">git还原</a></strong>&nbsp;&lt;散列码&gt;</code>&nbsp;命令回溯).</p>
 <p>&nbsp;</p>
-<h3><a id="user-content-step-9-almost-done-time-to-get-your-changes-on-github-back-to-your-computer" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-9-almost-done-time-to-get-your-changes-on-github-back-to-your-computer" aria-hidden="true"></a>Step 10: Get changes on GitHub back to your computer</h3>
-<p>Right now, the repo on GitHub looks a little different than what you have on your local machine. For example, the commit you made in your branch and merged into the master branch doesn't exist in the master branch on your local machine.</p>
-<p>In order to get the most recent changes that you or others have merged on GitHub, use the <code><strong>git pull origin master&nbsp;</strong></code>command (when working on the master branch).</p>
+<h3><a id="user-content-step-9-almost-done-time-to-get-your-changes-on-github-back-to-your-computer" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-9-almost-done-time-to-get-your-changes-on-github-back-to-your-computer" aria-hidden="true"></a>步骤 10: 将GitHub上的更改反馈到您的计算机 </h3>
+<p>现在，GitHub上的仓库看起来与本地计算机上的仓库有所不同。 例如，您在分支中进行的提交并合并到master分支中的提交在本地计算机上的master分支中并不存在。</p>
+<p>为了获得您或其他人在GitHub上合并的最新更改，可以使用  <code><strong>git pull origin master&nbsp;</strong></code>主命令(在主分支上工作时)。 </p>
 <p>
 <script src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/48b5c726b496d50c3975.js.下载"></script><link rel="stylesheet" href="./An Intro to Git and GitHub for Beginners (Tutorial)_files/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css"></p><div id="gist26279024" class="gist">
     <div class="gist-file">
@@ -749,9 +749,9 @@ Merge made by the <span class="pl-s"><span class="pl-pds">'</span>recursive<span
 </div>
 
 <p></p>
-<p>This shows you all the files that have changed and how they've changed.</p>
-<p>Now we can use the <a href="http://git-scm.com/docs/git-log" target="_blank"><strong><code>git log</code></strong></a> command again to&nbsp;see all new commits.</p>
-<p>(You may need to switch branches back to the master branch. You can do that using the <code><strong>git checkout master</strong>&nbsp;</code>command.)</p>
+<p>这将显示所有已更改的文件以及它们是如何更改的。 </p>
+<p>现在我们可以用  <a href="http://git-scm.com/docs/git-log" target="_blank"><strong><code>git log</code></strong></a> 再次命令以查看所有新提交。 </p>
+<p>(您可能需要将分支切换回主分支。您可以使用  <code><strong>git checkout master</strong>&nbsp;</code>主命令来实现这一点。) </p>
 <p>
 <script src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/48f55c5a237cd8e1a238.js.下载"></script><link rel="stylesheet" href="./An Intro to Git and GitHub for Beginners (Tutorial)_files/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css"></p><div id="gist26346090" class="gist">
     <div class="gist-file">
@@ -810,10 +810,11 @@ Date:   Thu Sep 10 17:42:15 2015 -0400
 </div>
 
 <p></p>
-<h3>步骤11: Bask in your git glory</h3>
-<p><span>You've successfully made a PR&nbsp;and merged your code to the master branch. Congratulations! If you'd like to dive a little deeper, check out the files in </span><a href="https://github.com/cubeton/git101/tree/master/TurtorialInfo" target="_blank">this Git101 folder</a><span>&nbsp;for even&nbsp;more tips and tricks on using git and GitHub.&nbsp;</span></p>
-<p>I also recommend finding some time to work with your team on simulating a smaller group project like we did here. Have your team make a new folder with your team name, and add some files with text to it. Then, try pushing those changes to this remote repo. That way, your team can start making changes to files they didn't originally create and practice using the PR&nbsp;feature. And, use the git blame and&nbsp;git history tools on GitHub to get familiar with tracking which changes have been made in a file and who made those changes.&nbsp;</p>
-<p><span>The more you use git, the more comfortable you'll... git with it. (I couldn't resist.)</span></p>
+<h3>步骤11: 享受你的git glory</h3>
+<p><span>您已经成功地创建了PR并将代码合并到主分支。恭喜你!如果您想更深入地研究一下，请查看  </span><a href="https://github.com/cubeton/git101/tree/master/TurtorialInfo" target="_blank">this Git101 folder</a><span>&nbsp;文件夹中的文件，了解更多关于使用git和GitHub的技巧。 &nbsp;</span></p>
+<p>我还建议花一些时间与您的团队一起模拟一个较小的小组项目，就像我们在这里所做的那样。 让您的团队使用您的团队名称创建一个新文件夹，并向其中添加一些带有文本的文件。 然后，尝试将这些更改推送到此远程仓库中。 这样，您的团队就可以开始对最初没有创建的文件进行更改，并使用PR功能进行练习。 并且，使用GitHub上的git blame和git history工具熟悉跟踪文件中进行了哪些更改以及谁进行了这些更改。&nbsp;</p>
+<p><span>您使用git的次数越多，您将越感到舒适。 （反正我是无法抗拒。）</span></p>
+
                 </div>
             </div>
         </div>
