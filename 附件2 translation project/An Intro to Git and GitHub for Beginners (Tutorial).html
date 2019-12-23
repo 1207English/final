@@ -342,14 +342,21 @@ body {padding-left:0px!important;padding-right:0px!important;}
 <p>&nbsp;</p>
 <p><!--more--></p>
 <h3>步骤0：安装git,创建一个github账户。&nbsp;</h3>
-<p>你首先需要做的两件事为：安装git并创建一个免费的Github账户 </p>
-<p>按照指示 <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">这里</a>&nbsp;安装git（如果尚未安装）。&nbsp;请注意，对于本教程，我们将仅在命令行上使用 git。虽然有一些很棒的 git GUI（图形用户界面），但我认为先使用 git 特定命令学习 git 更容易，然后在您更适应该命令后试用 git GUI。&nbsp;</p>
-<p>若你完成了上述操作，则创建一个GitHub账户 这里</a>. &nbsp;(公共仓库的账户是免费的，但是私人仓库要收费 。)</p>
+<p>The first two things you'll want to do are install git and create a free GitHub account.</p>
+<p>Follow the instructions <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">here</a>&nbsp;to install&nbsp;git (if it's not already installed).&nbsp;Note that for this&nbsp;tutorial we will be using git on the command line only. While there are some great git GUIs (graphical user interfaces), I think it's easier to learn git using git-specific commands first and then to try out a git GUI once you're more comfortable with the command.&nbsp;</p>
+<p>Once you've done that, create a GitHub account&nbsp;<a href="https://github.com/join" target="_blank">here</a>. &nbsp;(Accounts are free for public repositories, but there's a charge for private repositories.)</p>
 <p>&nbsp;</p>
+<<<<<<< HEAD
 <h3>步骤一: 创建一个本地的 git 仓库</h3>
 <p>当你使用 git 在本地计算机上创建新项目时，你需要创建一个新的<strong><a href="https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository" target="_blank">仓库</strong>(或者经常, '<strong>文件</strong>', 短期)。&nbsp;</p>
 <p>为了使用 git，我们将使用终端。如果您对终端和基本命令没有太多经验，请查看 <a href="http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/" target="_blank">该教程</a>&nbsp;(尤其是"导航文件系统"和"移动"部分)。</p>
 <p>首先，打开一个终端，然后移动到要使用 <code>cd</code> (改变目录) 命令。例如，如果您的桌面上有一个"项目"文件夹，则执行类似操作：</p>
+=======
+<h3>步骤一: Create a&nbsp;local git repository&nbsp;</h3>
+<p>When creating a new project on your local machine using git, you'll first create a new&nbsp;<strong><a href="https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository" target="_blank">repository</a>&nbsp;</strong>(or often, '<strong>repo</strong>', for short).&nbsp;</p>
+<p>To use git we'll be using the terminal. If you don't have much experience with the terminal and basic commands, check out <a href="http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/" target="_blank">this tutorial</a>&nbsp;(especially the 'Navigating the Filesystem' and 'Moving Around' sections).</p>
+<p>To begin, open up a terminal and move to where you want to place the project on your local machine using the <code>cd</code> (change directory) command. For example,&nbsp;if you have a 'projects' folder on your desktop, you'd do something like:</p>
+>>>>>>> aa68aab617fd2b242fc7f42a07876278342fa81d
 <p>
 <script src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/67a84eb876984f0b5785.js.下载"></script><link rel="stylesheet" href="./An Intro to Git and GitHub for Beginners (Tutorial)_files/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css"></p><div id="gist26245466" class="gist">
     <div class="gist-file">
@@ -378,7 +385,11 @@ mnelson:Desktop mnelson$ <span class="pl-c1">cd</span> myproject/</pre></div>
 
 <p></p>
 <p>&nbsp;</p>
+<<<<<<< HEAD
 <p>要初始化文件夹根目录中的 git 存储库，可以运行 <span style="font-family: &#39;courier new&#39;, courier;"><strong><a href="http://git-scm.com/docs/git-init" target="_blank">初始化</strong><span style="font-family: arial, helvetica, sans-serif;">命令:</span></span>&nbsp;&nbsp;</p>
+=======
+<p>To initialize a git repository in the root of the&nbsp;folder, run the <span style="font-family: &#39;courier new&#39;, courier;"><strong><a href="http://git-scm.com/docs/git-init" target="_blank">git init</a>&nbsp;</strong><span style="font-family: arial, helvetica, sans-serif;">command:</span></span>&nbsp;&nbsp;</p>
+>>>>>>> aa68aab617fd2b242fc7f42a07876278342fa81d
 <script src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/89793ba1bc947f64658e.js.下载"></script><link rel="stylesheet" href="./An Intro to Git and GitHub for Beginners (Tutorial)_files/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css"><div id="gist26245638" class="gist">
     <div class="gist-file">
       <div class="gist-data">
@@ -587,7 +598,7 @@ Changes to be committed:
 
 <p></p>
 <p>分支名称旁边带有星号表示在给定时间指向的分支。&nbsp;</p>
-<p>现在，如果您切换回master分支并进行更多提交，则新的分支将不会出现任何更改，除非您将这些更改<strong>合并</ strong>到新分支上。</p>
+<p>现在，如果您切换回主分支并进行更多提交，则新的分支将不会出现任何更改，除非您将这些更改<strong>合并</ strong>到新分支上。</p>
 <p>&nbsp;</p>
 <h3>Step 6:&nbsp;Create a new repository on GitHub</h3>
 <p>If you only&nbsp;want to keep track of your code locally, you don't&nbsp;need to use GitHub. But&nbsp;if you want to work with a team, you can use&nbsp;GitHub to collaboratively modify the project's&nbsp;code.</p>
